@@ -16,6 +16,8 @@ import PhotoGrid from './components/PhotoGrid';
 // import react router deps
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
+// store
+
 const router = (
 	<Router history={browserHistory}>
 		<Route path="/" component={Main}>

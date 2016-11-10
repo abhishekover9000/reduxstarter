@@ -15,8 +15,11 @@ const defaultState= {
 	comments : comments 
 }
 
-export default const store = createStore(rootReducer, defaultState);
+const store = createStore(rootReducer, defaultState);
 // method that takes root reducer
 
 // export cause you're using it
 export const history = syncHistoryWithStore(browserHistory, store);
+
+
+export default store;

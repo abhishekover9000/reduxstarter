@@ -1,0 +1,44 @@
+# React-Router
+
+- import router route indexroute browserhistory
+- can next routes like
+   <Router history={browserHistory}>
+      <Route path="/" component={Main}>
+   		<IndexRoute component={}/> </IndexRoute>
+   		<Route path="/view/:postId" < this is variable component={Single}> </Route>
+      </Route>
+   </Router>
+
+
+#Store
+
+create store with root reducer and default state
+store needs default data
+
+#Actions
+
+action creators go in its own actions folder- functions to fire off actions- minimal info as possible
+i.e.
+
+function action( minimal info ){
+	return
+	{
+		type: 'ACTION',
+		minimal,
+		info
+	}
+}
+
+#Reducer
+
+handles who is listening to actions
+there is a reducer for every piece of state
+reducer takes in two things
+ 1  action
+ 2 copy of state aka store
+reducer does work, and returns 
+  updated copy of state   aka new store
+
+
+
+
